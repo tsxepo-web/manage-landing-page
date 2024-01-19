@@ -1,0 +1,6 @@
+.nav--visible {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1s, opacity 1s;
+}
