@@ -1,0 +1,111 @@
+<footer class="bg-slate-800 py-10">
+  <div
+    class="flex flex-col container mx-auto w-4/5 sm:flex-row sm:justify-between sm:w-full"
+  >
+    <div class="order-3 flex flex-col py-9 sm:order-1 sm:p-0">
+      <div class="order-2 flex justify-center w-full py-6 sm:p-0">
+        <img class="" src="../../../assets/images/logo.svg" alt="" />
+      </div>
+      <div
+        class="flex justify-between order-1 sm:order-2 sm:h-full sm:items-end"
+      >
+        <a class="" href="./"
+          ><img
+            class="hover:bg-orange-700 w-4"
+            src="../../../assets/images/icon-facebook.svg"
+            alt=""
+        /></a>
+        <a class="" href="./"
+          ><img
+            class="hover:bg-orange-700 w-4"
+            src="../../../assets/images/icon-youtube.svg"
+            alt=""
+        /></a>
+        <a class="" href="./"
+          ><img
+            class="hover:bg-orange-700 w-4"
+            src="../../../assets/images/icon-twitter.svg"
+            alt=""
+        /></a>
+        <a class="" href="./"
+          ><img
+            class="hover:bg-orange-700 w-4"
+            src="../../../assets/images/icon-pinterest.svg"
+            alt=""
+        /></a>
+        <a class="" href="./"
+          ><img
+            class="hover:bg-orange-700 w-4"
+            src="../../../assets/images/icon-instagram.svg"
+            alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div
+      class="order-2 flex justify-between container mx-auto w-3/4 sm:justify-around"
+    >
+      <ul class="">
+        <li>
+          <a class="text-white hover:text-orange-700 text-xs" href="./">Home</a>
+        </li>
+        <li>
+          <a class="text-white hover:text-orange-700 text-xs" href="./"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a class="text-white hover:text-orange-700 text-xs" href="./"
+            >Product</a
+          >
+        </li>
+        <li>
+          <a class="text-white hover:text-orange-700 text-xs" href="./"
+            >About Us</a
+          >
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a class="text-white hover:text-orange-700 text-xs" href="./"
+            >Careers</a
+          >
+        </li>
+        <li>
+          <a class="text-white hover:text-orange-700 text-xs" href="./"
+            >Community</a
+          >
+        </li>
+        <li>
+          <a class="text-white hover:text-orange-700 text-xs" href="./"
+            >Privacy Policy</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="order-1 sm:order-3 sm:flex sm:flex-col">
+      <div class="" [formGroup]="profileForm">
+        <div class="flex">
+          <input
+            class="rounded-full mr-4 text-orange-700"
+            type="email"
+            placeholder="Update your inbox..."
+            formControlName="email"
+          />
+          <button class="bg-orange-700 text-white px-4 rounded-full">Go</button>
+        </div>
+        <p class="text-orange-700" *ngIf="profileForm.get('email')?.errors">
+          please enter a valid email
+        </p>
+      </div>
+      <div
+        class="relative top-64 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:static sm:translate-x-0 sm:translate-y-0 sm:text-xs sm:flex sm:h-full sm:items-end"
+      >
+        <p class="text-center text-gray-500 sm:">
+          Copywrite 2020. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -10,6 +10,7 @@ import { HeroSectionComponent } from './Components/hero-section/hero-section.com
 import { MainComponent } from './Components/main/main.component';
 import { CarouselComponent } from './Components/carousel/carousel.component';
 import { CallToActionComponent } from './Components/call-to-action/call-to-action.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 register();
 
@@ -21,6 +22,7 @@ register();
     MainComponent,
     CarouselComponent,
     CallToActionComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
