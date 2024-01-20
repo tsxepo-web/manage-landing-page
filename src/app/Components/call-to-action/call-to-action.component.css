@@ -1,0 +1,7 @@
+.cta {
+  background: url(../../../assets/images/bg-simplify-section-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: orangered;
+  /* min-height: 200px; */
+  margin-top: 2rem;
+}

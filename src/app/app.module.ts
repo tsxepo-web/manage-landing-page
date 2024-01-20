@@ -9,6 +9,7 @@ import { HeaderComponent } from './Components/header/header.component';
 import { HeroSectionComponent } from './Components/hero-section/hero-section.component';
 import { MainComponent } from './Components/main/main.component';
 import { CarouselComponent } from './Components/carousel/carousel.component';
+import { CallToActionComponent } from './Components/call-to-action/call-to-action.component';
 
 register();
 
@@ -19,6 +20,7 @@ register();
     HeroSectionComponent,
     MainComponent,
     CarouselComponent,
+    CallToActionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
