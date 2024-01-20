@@ -11,26 +11,15 @@ import 'swiper/css/pagination';
 export class CarouselComponent implements OnInit {
   ngOnInit(): void {
     const swiper = new Swiper('.swiper', {
-      slidesPerView: 1,
+      spaceBetween: 1,
+      slidesPerView: 3,
       centeredSlides: true,
-      spaceBetween: 16,
-      // autoplay: true,
+      roundLengths: true,
       loop: true,
+      // autoplay: true,
 
       pagination: {
         el: '.swiper-pagination',
-      },
-      breakpoints: {
-        768: {
-          centeredSlides: true,
-          slidesPerView: 'auto',
-          spaceBetween: 16,
-        },
-      },
-      on: {
-        resize: function () {
-          swiper.update();
-        },
       },
     });
   }
