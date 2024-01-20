@@ -12,7 +12,7 @@ export class CarouselComponent implements OnInit {
   ngOnInit(): void {
     const swiper = new Swiper('.swiper', {
       spaceBetween: 1,
-      slidesPerView: 3,
+      slidesPerView: 1,
       centeredSlides: true,
       roundLengths: true,
       loop: true,
@@ -20,6 +20,12 @@ export class CarouselComponent implements OnInit {
 
       pagination: {
         el: '.swiper-pagination',
+      },
+      breakpoints: {
+        // when window width is less than 640px
+        640: {
+          slidesPerView: 3,
+        },
       },
     });
   }
