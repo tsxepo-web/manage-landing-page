@@ -1,24 +1,39 @@
-<header class="bg-gray-800">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+<header class="">
+  <div class="mx-auto max-w-7xl px-2 py-4 sm:px-6 sm:py-6 lg:px-8 border">
     <div class="flex text-white items-center sm:items-stretch sm:justify-start">
       <div class="flex flex-shrink-0 items-start">
         <img class="h-8 w-max" src="../../../assets/images/logo.svg" alt="" />
       </div>
 
       <div class="hidden sm:ml-6 sm:block">
-        <div class="flex space-x-4">
-          <a href="./" class="">Pricing</a>
-          <a href="./" class="">Product</a>
-          <a href="./" class="">About Us</a>
-          <a href="./" class="">Careers</a>
-          <a href="./" class="">Community</a>
+        <div class="flex mt-1 space-x-4">
+          <a href="./" class="text-sky-900 text-sm hover:text-slate-300"
+            >Pricing</a
+          >
+          <a href="./" class="text-sky-900 text-sm hover:text-slate-300"
+            >Product</a
+          >
+          <a href="./" class="text-sky-900 text-sm hover:text-slate-300"
+            >About Us</a
+          >
+          <a href="./" class="text-sky-900 text-sm hover:text-slate-300"
+            >Careers</a
+          >
+          <a href="./" class="text-sky-900 text-sm hover:text-slate-300"
+            >Community</a
+          >
         </div>
       </div>
-      <a class="h-6 ml-auto hidden sm:block" href="./">Get Started</a>
+      <button
+        class="ml-auto bg-orange-600 text-sm rounded-full hidden sm:block text-white hover:bg-orange-500 px-4"
+        href="./"
+      >
+        Get Started
+      </button>
     </div>
 
     <div
-      class="absolute inset-y-0 right-0 sm:hidden"
+      class="absolute inset-y-0 right-0 top-2 sm:hidden"
       (click)="toggleMenu(); $event.stopPropagation()"
     >
       <button
@@ -43,35 +58,35 @@
   </div>
 
   <div
-    class="bg-blue-900 w-3/4 absolute top-40 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden sm:hidden"
+    class="bg-white shadow-xl w-11/12 h-1/2 absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden sm:hidden"
     [class.nav--visible]="isMenuVisible"
     id="mobile-menu"
   >
-    <div class="space-y-1 px-2 pb-3 pt-2 text-center">
+    <div class="space-y-8 py-4 text-center">
       <a
         href="#"
-        class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+        class="text-slate-900 block text-base font-medium hover:text-slate-300"
         aria-current="page"
         >Pricing</a
       >
       <a
         href="#"
-        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        class="text-slate-900 block text-base font-medium hover:text-slate-300"
         >Product</a
       >
       <a
         href="#"
-        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        class="text-slate-900 block text-base font-medium hover:text-slate-300"
         >About US</a
       >
       <a
         href="#"
-        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        class="text-slate-900 block text-base font-medium hover:text-slate-300"
         >Careers</a
       >
       <a
         href="#"
-        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        class="text-slate-900 block text-base font-medium hover:text-slate-300"
         >Community</a
       >
     </div>
