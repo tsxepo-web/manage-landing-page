@@ -16,7 +16,7 @@ export class CarouselComponent implements OnInit {
       centeredSlides: true,
       roundLengths: true,
       loop: true,
-      // autoplay: true,
+      autoplay: true,
 
       pagination: {
         el: '.swiper-pagination',

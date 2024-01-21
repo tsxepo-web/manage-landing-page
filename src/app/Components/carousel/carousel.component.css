@@ -19,7 +19,7 @@
 
   &.swiper-slide-active {
     transform: scale(1);
-    background: #fc0;
+    background: white;
   }
 }
 .swiper-slide__content {
