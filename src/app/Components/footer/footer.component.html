@@ -1,4 +1,4 @@
-<footer class="bg-slate-800 py-10">
+<footer class="bg-veryDarkBlue py-10">
   <div
     class="flex flex-col container mx-auto w-4/5 sm:flex-row sm:justify-between sm:w-full"
   >
@@ -11,31 +11,31 @@
       >
         <a class="" href="./"
           ><img
-            class="hover:bg-orange-700 w-4"
+            class="w-4 hover:bg-brightRed"
             src="../../../assets/images/icon-facebook.svg"
             alt=""
         /></a>
         <a class="" href="./"
           ><img
-            class="hover:bg-orange-700 w-4"
+            class="w-4 hover:bg-brightRed"
             src="../../../assets/images/icon-youtube.svg"
             alt=""
         /></a>
         <a class="" href="./"
           ><img
-            class="hover:bg-orange-700 w-4"
+            class="w-4 hover:bg-brightRed"
             src="../../../assets/images/icon-twitter.svg"
             alt=""
         /></a>
         <a class="" href="./"
           ><img
-            class="hover:bg-orange-700 w-4"
+            class="w-4 hover:bg-brightRed"
             src="../../../assets/images/icon-pinterest.svg"
             alt=""
         /></a>
         <a class="" href="./"
           ><img
-            class="hover:bg-orange-700 w-4"
+            class="w-4 hover:bg-brightRed"
             src="../../../assets/images/icon-instagram.svg"
             alt=""
         /></a>
@@ -47,37 +47,39 @@
     >
       <ul class="">
         <li>
-          <a class="text-white hover:text-orange-700 text-xs" href="./">Home</a>
+          <a class="text-veryLightGray text-xs hover:text-brightRed" href="./"
+            >Home</a
+          >
         </li>
         <li>
-          <a class="text-white hover:text-orange-700 text-xs" href="./"
+          <a class="text-veryLightGray text-xs hover:text-brightRed" href="./"
             >Pricing</a
           >
         </li>
         <li>
-          <a class="text-white hover:text-orange-700 text-xs" href="./"
+          <a class="text-veryLightGray text-xs hover:text-brightRed" href="./"
             >Product</a
           >
         </li>
         <li>
-          <a class="text-white hover:text-orange-700 text-xs" href="./"
+          <a class="text-veryLightGray text-xs hover:text-brightRed" href="./"
             >About Us</a
           >
         </li>
       </ul>
       <ul>
         <li>
-          <a class="text-white hover:text-orange-700 text-xs" href="./"
+          <a class="text-veryLightGray text-xs hover:text-brightRed" href="./"
             >Careers</a
           >
         </li>
         <li>
-          <a class="text-white hover:text-orange-700 text-xs" href="./"
+          <a class="text-veryLightGray text-xs hover:text-brightRed" href="./"
             >Community</a
           >
         </li>
         <li>
-          <a class="text-white hover:text-orange-700 text-xs" href="./"
+          <a class="text-veryLightGray text-xs hover:text-brightRed" href="./"
             >Privacy Policy</a
           >
         </li>
@@ -88,21 +90,25 @@
       <div class="" [formGroup]="profileForm">
         <div class="flex">
           <input
-            class="rounded-full mr-4 text-orange-700"
+            class="rounded-full mr-4 text-brightRed"
             type="email"
             placeholder="Update your inbox..."
             formControlName="email"
           />
-          <button class="bg-orange-700 text-white px-4 rounded-full">Go</button>
+          <button
+            class="text-white px-4 rounded-full bg-brightRed hover:bg-brightRedHover"
+          >
+            Go
+          </button>
         </div>
-        <p class="text-orange-700" *ngIf="profileForm.get('email')?.errors">
+        <p class="text-brightRed" *ngIf="profileForm.get('email')?.errors">
           please enter a valid email
         </p>
       </div>
       <div
         class="relative top-64 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:static sm:translate-x-0 sm:translate-y-0 sm:flex sm:h-full sm:items-end"
       >
-        <p class="text-center text-gray-500 text-xs">
+        <p class="text-center text-darkGrayishBlue text-xs">
           Copywrite 2020. All Rights Reserved
         </p>
       </div>
